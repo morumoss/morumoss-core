@@ -1,0 +1,104 @@
+{
+  "parser": "@typescript-eslint/parser",
+
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier","promise"],
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+
+  "globals": {
+    "__DEV__": true
+  },
+
+  "rules": {
+    // Forbid the use of extraneous packages
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md
+    "import/no-extraneous-dependencies": ["error", { "packageDir": "." }],
+
+    // Recommend not to leave any console.log in your code
+    // Use console.error, console.warn and console.info instead
+    // https://eslint.org/docs/rules/no-console
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ],
+
+    // Allow only special identifiers
+    // https://eslint.org/docs/rules/no-underscore-dangle
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["__typename", "__DEV__"]
+      }
+    ],
+
+    // Prefer destructuring from arrays and objects
+    // http://eslint.org/docs/rules/prefer-destructuring
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+
+   
+
+    // ESLint plugin for prettier formatting
+    // https://github.com/prettier/eslint-plugin-prettier
+    "prettier/prettier": "error",
+
+    // Cannot config .ts, .tsx resolution
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "local",
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-param-reassign": ["error", {
+      "props": true,
+      "ignorePropertyModificationsFor": [
+        "acc", // for reduce accumulators
+        "accumulator", // for reduce accumulators
+        "e", // for e.returnValue
+        "ctx", // for Koa routing
+        "req", // for Express requests
+        "request", // for Express requests
+        "res", // for Express responses
+        "response", // for Express responses
+        "$scope", // for Angular 1 scopes
+        "draft", // for immer
+        "draftState" // for immer
+      ]
+    }],
+    "no-undef": 0
+  }
+}
