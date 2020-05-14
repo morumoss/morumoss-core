@@ -1,0 +1,19 @@
+{
+  "name": "@openkata/logger",
+  "version": "0.0.1",
+  "description": "Openkata default logger",
+  "main": "lib/index.js",
+  "author": "Aaron Bassett",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "winston": "3.2.1"
+  },
+  "devDependencies": {
+    "typescript": "3.9.2"
+  }
+}

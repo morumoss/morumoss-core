@@ -1,9 +1,11 @@
 {
   "name": "@openkata/platform",
   "private": true,
+  "license": "MIT",
   "workspaces": {
     "packages": [
-      "service/*"
+      "service/*",
+      "src/*"
     ]
   },
   "devDependencies": {
