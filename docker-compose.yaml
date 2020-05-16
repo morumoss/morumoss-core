@@ -17,9 +17,6 @@ services:
     ports:
       - 2377:2375
       - 2378:2376
-    security_opt:
-      - seccomp:unconfined
-      - apparmor:unconfined
     stdin_open: true
     tty: true
     privileged: true
