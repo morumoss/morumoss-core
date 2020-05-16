@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "lib",
+        "outDir": "dist",
         "baseUrl": "./src",
         "target": "ES2019",
         "lib": [
@@ -15,8 +15,6 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noUnusedLocals": true,
-        "declaration": true,
-        "sourceMap": true
       },
       "exclude": [
         "node_modules"

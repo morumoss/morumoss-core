@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "author": "Aaron Bassett",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch"

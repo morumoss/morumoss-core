@@ -28,7 +28,7 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-"@types/dockerode@^2.5.24":
+"@types/dockerode@^2.5.28":
   version "2.5.28"
   resolved "https://registry.yarnpkg.com/@types/dockerode/-/dockerode-2.5.28.tgz#e8fe6366782d052be3da7e508617f3c820defc1a"
   integrity sha512-YHs025G2P+h+CDlmub33SY/CvGWCHpHATbgq73wykyvnZZjL0Iq+w+Vv214w3cac5McimFhsVecDJBNgPuMo4Q==
@@ -52,15 +52,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
-"@types/node@*":
+"@types/node@*", "@types/node@14.0.1":
   version "14.0.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.1.tgz#5d93e0a099cd0acd5ef3d5bde3c086e1f49ff68c"
   integrity sha512-FAYBGwC+W6F9+huFIDtn43cpy7+SzG+atzRiTfdp3inUKL2hXnd4rG8hylJLIh4+hqrQy1P17kvJByE/z825hA==
-
-"@types/node@^13.9.2":
-  version "13.13.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.13.4.tgz#1581d6c16e3d4803eb079c87d4ac893ee7501c2c"
-  integrity sha512-x26ur3dSXgv5AwKS0lNfbjpCakGIduWU1DU91Zz58ONRWrIKGunmZBNv4P7N+e27sJkiGDsw/3fT4AtsqQBrBA==
 
 "@types/tar-fs@^1.16.3":
   version "1.16.3"
@@ -480,23 +475,23 @@ diff@^4.0.1:
   integrity sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==
 
 docker-modem@^2.1.0:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/docker-modem/-/docker-modem-2.1.3.tgz#15432225f63db02eb5de4bb9a621b7293e5f264d"
-  integrity sha512-cwaRptBmYZwu/FyhGcqBm2MzXA77W2/E6eVkpOZVDk6PkI9Bjj84xPrXiHMA+OWjzNy+DFjgKh8Q+1hMR7/OHg==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/docker-modem/-/docker-modem-2.1.1.tgz#c2d37350b45576ea1aa9902347b7b28cab933ea2"
+  integrity sha512-zSFwYN4AP38LJhTIOpZMjiDbAqSJbv8+u9i/Xq5XABIeTzgp83VF63epu6sVHWxe+6tfhMXqgV+sYjZWh/UzSQ==
   dependencies:
     debug "^4.1.1"
     readable-stream "^3.5.0"
     split-ca "^1.0.1"
     ssh2 "^0.8.7"
 
-dockerode@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/dockerode/-/dockerode-3.2.0.tgz#80e5bd9c2a988bdde4c995ae4aa2584fa0166c23"
-  integrity sha512-C+y/W4Kks7YLBsfUOTMkk1IVilb4cdj+rE+UZ5hnE+rpcn2frSs7kX+6H8GteTqHcv8sln+GyxuP1qdno3IzIw==
+dockerode@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/dockerode/-/dockerode-3.1.0.tgz#85b97a1ea1c48231ed32974827127b7b80b2af20"
+  integrity sha512-E0KknBBTlIVEvtt2XJRZ3he59u2UN8Yr1A08Sey/BKIox+WlwnJp5fL5SKyhPgNmSXgamPEuKYCJxMi31uj0Nw==
   dependencies:
     concat-stream "~2.0.0"
     docker-modem "^2.1.0"
-    tar-fs "~2.0.1"
+    tar-fs "~2.0.0"
 
 doctrine@1.5.0:
   version "1.5.0"
@@ -512,6 +507,11 @@ doctrine@^3.0.0:
   integrity sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==
   dependencies:
     esutils "^2.0.2"
+
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -1825,7 +1825,7 @@ tar-fs@^2.0.1:
     pump "^3.0.0"
     tar-stream "^2.0.0"
 
-tar-fs@~2.0.1:
+tar-fs@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/tar-fs/-/tar-fs-2.0.1.tgz#e44086c1c60d31a4f0cf893b1c4e155dabfae9e2"
   integrity sha512-6tzWDMeroL87uF/+lin46k+Q+46rAJ0SyPGz7OW7wTgblI273hsBqk2C1j0/xNadNLKDTUL9BukSjB7cwgmlPA==

@@ -1,0 +1,25 @@
+{
+  "name": "@openkata/builder",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@openkata/logger": "0.0.1",
+    "@types/dockerode": "^2.5.28",
+    "@types/fs-extra": "^8.1.0",
+    "@types/tar-fs": "^1.16.3",
+    "aws-sdk": "^2.628.0",
+    "dockerode": "3.1.0",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.0",
+    "squiss-ts": "^4.0.10",
+    "tar-fs": "^2.0.1"
+  },
+  "devDependencies": {
+    "ts-node": "8.7.0",
+    "typescript": "3.8.3"
+  }
+}
