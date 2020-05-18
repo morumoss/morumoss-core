@@ -1,9 +1,11 @@
 {
   "name": "@openkata/platform",
   "private": true,
+  "license": "MIT",
   "workspaces": {
     "packages": [
-      "service/*"
+      "service/*",
+      "src/*"
     ]
   },
   "devDependencies": {
@@ -23,6 +25,6 @@
     "ts-node": "8.9.1"
   },
   "dependencies": {
-
+    "@types/node": "14.0.1"
   }
 }
